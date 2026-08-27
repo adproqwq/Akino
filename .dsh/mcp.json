@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "servers": [
+    {
+      "name": "mdui",
+      "transport": "stdio",
+      "enabled": true,
+      "toolCallTimeoutMs": 15000,
+      "reconnect": {},
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mdui/mcp"
+      ]
+    }
+  ]
+}
