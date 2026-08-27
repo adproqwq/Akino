@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Home",
+    "game": "Game",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "Welcome to Akino!",
+    "subtitle": "A third-party Akinator app designed with Material You."
+  },
+  "settings": {
+    "common": {
+      "title": "Common",
+      "language": "Language",
+      "theme": {
+        "title": "Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "followSystem": "Follow system"
+      }
+    },
+    "proxy": {
+      "title": "Proxy",
+      "proxy": "Http proxy",
+      "tips": "Please restart the app to apply proxy."
+    },
+    "others": {
+      "title": "Others",
+      "about": "About"
+    }
+  },
+  "game": {
+    "settings": {
+      "title": "Game settings",
+      "language": "Game language",
+      "theme": {
+        "title": "Game theme",
+        "character": "Character",
+        "objects": "Objects",
+        "animals": "Animals"
+      },
+      "start": "Start"
+    },
+    "game": {
+      "step": "Question {step}:",
+      "option": {
+        "yes": "Yes",
+        "no": "No",
+        "dontKnow": "Don't know",
+        "probably": "Probably",
+        "probablyNot": "Probably not"
+      },
+      "tips": "Answer is submitted...Please wait for a moment.",
+      "ko": "Akinator couldn't guess.",
+      "won": {
+        "name": "I guess {name}.",
+        "yes": "Yes",
+        "no": "No"
+      }
+    }
+  }
+}
