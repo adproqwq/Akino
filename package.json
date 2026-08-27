@@ -1,7 +1,7 @@
 {
   "name": "akino",
   "version": "1.0.0",
-  "description": "An Electron application with Vue and TypeScript",
+  "description": "A third-party Akinator app designed with Material You",
   "license": "MIT",
   "main": "./out/main/index.js",
   "author": {
