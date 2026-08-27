@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 import { defineConfig } from 'electron-vite';
 import VueRouter from 'vue-router/vite';
 import Vue from '@vitejs/plugin-vue';
@@ -11,19 +11,14 @@ export default defineConfig({
     input: resolve('src/preload/index.ts'),
   },
   renderer: {
-    resolve: {
-      alias: {
-        '@renderer': resolve('src/renderer/src'),
-      },
-    },
     plugins: [
       VueRouter({
         routesFolder: [
           {
-            src: 'src/renderer/src/views',
+            src: resolve('src/renderer/src/views'),
           },
         ],
-        dts: 'src/renderer/typed-router.d.ts',
+        dts: resolve('src/renderer/typed-router.d.ts'),
       }),
       Vue({
         template: {

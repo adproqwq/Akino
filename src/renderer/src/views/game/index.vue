@@ -3,8 +3,26 @@ import { ref } from 'vue';
 import { Conf } from 'electron-conf/renderer';
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
-import { Languages, Themes, AVAILABLE_THEMES } from 'akinator-client';
+import type { Languages as AkinatorLanguages, Themes as AkinatorThemes } from 'akinator-client';
 import type { SegmentedButtonGroupEventMap, SegmentedButtonGroup, RadioGroupEventMap, RadioGroup } from 'mdui';
+
+const Languages = {
+  English: 'en' as AkinatorLanguages,
+  Chinese: 'cn' as AkinatorLanguages,
+  Japanese: 'jp' as AkinatorLanguages,
+};
+
+const Themes = {
+  Character: 1 as AkinatorThemes,
+  Objects: 2 as AkinatorThemes,
+  Animals: 14 as AkinatorThemes,
+};
+
+const AVAILABLE_THEMES: Record<string, readonly AkinatorThemes[]> = {
+  [Languages.Chinese]: [Themes.Character],
+  [Languages.English]: [Themes.Character, Themes.Animals, Themes.Objects],
+  [Languages.Japanese]: [Themes.Character, Themes.Animals],
+};
 
 const conf = new Conf();
 const { t } = useI18n();
@@ -29,11 +47,11 @@ const language = ref(Languages.Chinese);
 const theme = ref(Themes.Character);
 
 const onLanguageChange = (event: SegmentedButtonGroupEventMap['change']) => {
-  language.value = (event.target as SegmentedButtonGroup).value as Languages;
+  language.value = (event.target as SegmentedButtonGroup).value as AkinatorLanguages;
 };
 
 const onThemeChange = (event: RadioGroupEventMap['change']) => {
-  theme.value = Number((event.target as RadioGroup).value) as Themes;
+  theme.value = Number((event.target as RadioGroup).value) as AkinatorThemes;
 };
 
 const start = () => {
