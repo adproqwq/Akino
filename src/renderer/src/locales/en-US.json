@@ -55,7 +55,7 @@
       "won": {
         "name": "I guess {name}.",
         "yes": "Yes",
-        "no": "No"
+        "no": "No(Start a new game)"
       }
     }
   }

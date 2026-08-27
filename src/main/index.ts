@@ -98,5 +98,6 @@ ipcMain.on('akino.submitWin', async () => {
 });
 
 ipcMain.handle('akino.gameContinue', async () => {
-  return await akinator.continue();
+  // return await akinator.continue();
+  return await akinator.start(); // akinator.continue is not work properly due to Akinator itself
 });
