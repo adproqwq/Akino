@@ -2,11 +2,13 @@
   "name": "akino",
   "version": "1.0.0",
   "description": "An Electron application with Vue and TypeScript",
+  "license": "MIT",
   "main": "./out/main/index.js",
+  "author": {
+    "name": "adproqwq",
+    "url": "https://github.com/adproqwq"
+  },
   "scripts": {
-    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
-    "typecheck:web": "vue-tsc --noEmit -p tsconfig.web.json --composite false",
-    "typecheck": "pnpm typecheck:node && pnpm typecheck:web",
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
     "build": "pnpm typecheck && electron-vite build",
