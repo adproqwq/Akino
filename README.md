@@ -31,7 +31,6 @@ Akino 是一个基于 Electron、Vue 3 和 TypeScript 的跨平台 Akinator 桌�
 | 配置存储 | electron-conf |
 | 游戏接口 | akinator-client |
 | 安装包 | electron-builder |
-| 自动更新 | electron-updater |
 
 ## 项目结构
 
@@ -53,7 +52,7 @@ akino/
 │           ├── main.ts            # Vue 应用入口
 │           ├── i18n.ts            # 国际化初始化
 │           ├── locales/           # zh-CN 与 en-US 语言包
-│           ├── components/        # 公用组件（例如 WonDialog）
+│           ├── components/        # 公用组件
 │           └── views/             # 文件路由页面
 ├── electron.vite.config.ts        # Electron Vite 构建配置
 ├── electron-builder.yml           # 安装包配置
