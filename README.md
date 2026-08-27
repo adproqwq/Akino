@@ -102,6 +102,10 @@ pnpm build:linux     # Linux AppImage、snap 和 deb
 
 安装包的应用 ID 为 `top.adproqwq.akino`。发布自动更新前，请在 `electron-builder.yml` 和 `dev-app-update.yml` 中配置实际的更新服务地址。
 
+## 贡献
+
+欢迎参与贡献！请阅读 [贡献指南](./CONTRIBUTION.md) 了解贡献方式、代码规范与 AI 辅助贡献政策。
+
 ## 捐赠
 
 如果你喜欢这个项目，可以通过 [爱发电](https://afdian.com/a/Adpro) 捐赠支持作者。你的支持将帮助项目持续维护和发展。

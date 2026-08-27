@@ -103,6 +103,10 @@ pnpm build:linux     # Linux AppImage, snap, and deb packages
 
 The application ID is `top.adproqwq.akino`. Before publishing auto-updates, configure an actual update endpoint in `electron-builder.yml` and `dev-app-update.yml`.
 
+## Contributing
+
+Contributions are welcome! Please read the [Contributing Guide](./CONTRIBUTION_en.md) for ways to contribute, code style, and the AI-assisted contribution policy.
+
 ## Donate
 
 If you like this project, you can support the author by donating via [Afdian](https://afdian.com/a/Adpro). Your support helps keep the project maintained and growing.
